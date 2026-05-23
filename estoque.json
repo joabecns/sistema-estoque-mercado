@@ -1,0 +1,42 @@
+{
+    "arroz 5kg": {
+        "preco": 25.9,
+        "quantidade": 50
+    },
+    "feijão 1kg": {
+        "preco": 8.5,
+        "quantidade": 80
+    },
+    "leite integral": {
+        "preco": 5.2,
+        "quantidade": 120
+    },
+    "óleo de soja": {
+        "preco": 7.8,
+        "quantidade": 60
+    },
+    "açúcar 1kg": {
+        "preco": 4.9,
+        "quantidade": 100
+    },
+    "macarrão 500g":{
+        "preco": 3.5,
+        "quantidade": 75
+    },
+    "café 500g": {
+        "preco": 14.9,
+        "quantidade": 40
+    },
+    "farinha de trigo": {
+        "preco": 4.2,
+        "quantidade": 87
+    },
+    "sabão em pó": {
+        "preco": 11.5,
+        "quantidade": 35
+    },
+    "barra de chocolate": {
+        "preco": 5.0,
+        "quantidade": 30
+    }
+}
