@@ -4,18 +4,17 @@ import os
 arquivo = "estoque.json"
 
 estoque_padrao = {
-    "arroz 5kg": {"preco": 25.9, "quantidade": 50},
-    "feijão 1kg": {"preco": 8.5, "quantidade": 80},
+    "arroz": {"preco": 25.9, "quantidade": 50},
+    "feijão": {"preco": 8.5, "quantidade": 80},
     "leite integral": {"preco": 5.2, "quantidade": 120},
     "óleo de soja": {"preco": 7.8, "quantidade": 60},
-    "açúcar 1kg": {"preco": 4.9, "quantidade": 100},
-    "macarrão 500g": {"preco": 3.5, "quantidade": 75},
-    "café 500g": {"preco": 14.9, "quantidade": 40},
+    "açúcar": {"preco": 4.9, "quantidade": 100},
+    "macarrão": {"preco": 3.5, "quantidade": 75},
+    "café": {"preco": 14.9, "quantidade": 40},
     "farinha de trigo": {"preco": 4.2, "quantidade": 87},
     "sabão em pó": {"preco": 11.5, "quantidade": 35},
     "barra de chocolate": {"preco": 5.0, "quantidade": 30}
 }
-
 
 def mostrar_estoque(estoque_padrao: dict):
     print("=" * 50)
@@ -27,11 +26,9 @@ def mostrar_estoque(estoque_padrao: dict):
 
     print("=" * 50)
 
-
 def salvar_estoque(estoque_padrao: dict):
     with open("estoque.json", "w", encoding="utf-8") as arquivo:
         json.dump(estoque_padrao, arquivo, indent=4, ensure_ascii=False)
-
 
 def carregar_estoque():
     if not os.path.exists("estoque.json"):
@@ -81,7 +78,6 @@ def adicionar_item(estoque: dict):
     salvar_estoque(estoque)
     print(f"{nome} foi {status} com sucesso!")
 
-
 def remover_item(estoque: dict):
     print()
     print("--- REMOVER PRODUTO ---")
@@ -100,7 +96,3 @@ def remover_item(estoque: dict):
     else:
         print("Produto não encontrado no estoque")
 
-estoque = carregar_estoque()
-mostrar_estoque(estoque)
-adicionar_item(estoque)
-remover_item(estoque)
