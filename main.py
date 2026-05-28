@@ -5,8 +5,10 @@ def main(dados_estoque: dict):
     print("=" * 40)
     print("SUPERMERCADO DO SEU ZÉ".center(35))
     print("=" * 40)
+    print()
 
     while True:
+        print("=" * 40)
         print("MENU DO ADMINISTRADOR".center(35))
         print("=" * 40)
         print("[1] Ver estoque completo")
@@ -30,7 +32,7 @@ def main(dados_estoque: dict):
 
         elif opcao == 3:
             estoque.remover_item(dados_estoque)
-
+ 
         elif opcao == 0:
             print("Saindo do painel admim...") 
             sleep(1.5)
