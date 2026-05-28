@@ -26,7 +26,6 @@ def mostrar_estoque(estoque_padrao: dict):
         print(f"{produto:<20} | R${dados['preco']:<10} | {dados['quantidade']:<10}")
 
     print("=" * 50)
-    input('Aperte ENTER para voltar ao MENU...')
 
 def salvar_estoque(estoque_padrao: dict):
     with open("estoque.json", "w", encoding="utf-8") as arquivo:
@@ -72,13 +71,13 @@ def adicionar_item(estoque: dict):
             return
 
     if nome in estoque:
-        status = 'atualizado'
+        status = 'ATUALIZADO'
     else:
-        status = 'adicionado'
+        status = 'ADICIONADO'
     estoque[nome] = {"preco": preco, "quantidade": quantidade}
     salvar_estoque(estoque)
     sleep(1.5)
-    print(f"O produto '{nome}' foi {status} com sucesso!")
+    print(f"O produto '{nome}' foi {'\033[32m'}{status}{'\033[m'} com sucesso!")
     input('Aperte ENTER para voltar ao MENU...')
 
 def remover_item(estoque: dict):
@@ -94,7 +93,7 @@ def remover_item(estoque: dict):
             del estoque[nome]
             salvar_estoque(estoque)
             sleep(1.5)
-            print(f"O produto '{nome}' foi removido")
+            print(f"O produto '{nome}' foi {'\033[31m'}REMOVIDO{'\033[m'} com sucesso!")
             input('Aperte ENTER para voltar ao MENU...')
         else:
             print("Operação cancelada.")
