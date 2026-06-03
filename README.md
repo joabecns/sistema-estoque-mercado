@@ -52,3 +52,6 @@ Python 3 Documentation, 2024. Disponível em:
 
 CRUD: o que é e como funciona?:
 <https://blog.geekhunter.com.br/crud/>
+
+Cores no Terminal
+<https://www.youtube.com/watch?v=0hBIhkcA8O8>
