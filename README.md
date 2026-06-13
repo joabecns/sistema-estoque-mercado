@@ -28,13 +28,12 @@ Linguagem e ferramentas utilizadas:
 
 ------main.py------
 
-O arquivo 'main.py' é responsável por chamar todas funções definidas no arquivo 'estoque.py'. Além disso, foi criado uma interface intuitiva, amigável e organizada, utilzando técnicas de estilização como '<20'para centralizar a direita e 'center:' para centralizar. 
+O arquivo 'main.py' é responsável por chamar todas funções definidas no arquivo 'estoque.py'. Além disso, foi criado uma interface intuitiva, amigável e organizada, utilizando técnicas de estilização como '<20'para centralizar a direita e 'center:' para centralizar. 
 
 ------estoque.json------ 
 O estoque.json é criado a partir da execução do programa, servindo para armazenar. de forma permanente, os dados recebido pelo programa. É usado, como um banco de dados, sendo útil para inserir, visualizar, atualizar e deletar dados de um programa CRUD, por exemplo. 
 
-
-
+OBS: uso da inteligência artificial ao fina do projeto para refinamento e aperfeiçoamento do código
 
 
 Referência Bibliográfica:
