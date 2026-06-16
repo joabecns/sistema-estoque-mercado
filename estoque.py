@@ -47,9 +47,8 @@ def adicionar_item(estoque: dict):
 
     nome = input("Nome do produto: ").strip().lower()
     if not nome:
-        print(f"{'\033[1;31m'}O nome do produto não pode ser vazio!{'\033[m'}")
+        print(f"{'\033[1;31m'}O nome do produto não pode ser vazio.{'\033[m'}")
         return
-            
     while True:
         try:
             preco_input = input("Preço (R$): ").strip().replace(",", ".")
